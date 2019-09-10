@@ -35,8 +35,8 @@ export default {
     }
     return {
       loginForm: {
-        mobile: '',
-        code: ''
+        mobile: '18326878850',
+        code: '246810'
       },
       // 校验规则对象  在data函数中定义
       loginRules: {
@@ -68,7 +68,7 @@ export default {
               // res 是响应对象 res.data数据属于响应主体
               // console.log(res.data)
               this.$message.success('登陆成功')
-              this.$router.push('/')
+              this.$router.push('/home')
             })
             .catch(() => {
               // 请求失败 提示  手机号或验证码错误
